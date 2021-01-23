@@ -9,3 +9,6 @@
 ## 0.0.3
 
 * memory info.
+
+## 0.0.4
+* add all platforms.(linux not tested)

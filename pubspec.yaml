@@ -34,3 +34,5 @@ flutter:
       web:
         pluginClass: MemoryPluginWeb
         fileName: memory_plugin_web.dart
+
+scripts: derry.yaml

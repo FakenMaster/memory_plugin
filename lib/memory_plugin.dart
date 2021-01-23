@@ -11,4 +11,9 @@ class MemoryPlugin {
     final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static Future<String?> get memoryInfo async {
+    final String? memoryInfo = await _channel.invokeMethod('getMemoryInfo');
+    return memoryInfo;
+  }
 }

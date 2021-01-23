@@ -28,11 +28,13 @@ class MemoryPluginWeb {
     switch (call.method) {
       case 'getPlatformVersion':
         return getPlatformVersion();
-        break;
+      case 'getMemoryInfo':
+        return getMemoryInfo();
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'memory_plugin for web doesn\'t implement \'${call.method}\'',
+          details:
+              'memory_plugin for web doesn\'t implement \'${call.method}\'',
         );
     }
   }
@@ -41,5 +43,11 @@ class MemoryPluginWeb {
   Future<String> getPlatformVersion() {
     final version = html.window.navigator.userAgent;
     return Future.value(version);
+  }
+
+  Future<String> getMemoryInfo() {
+    // final version = html.window.navigator.userAgent;
+    // return Future.value(version);
+    return Future.value('not implemented');
   }
 }

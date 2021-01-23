@@ -12,6 +12,8 @@ public class MemoryPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "getPlatformVersion":
       result("macOS " + ProcessInfo.processInfo.operatingSystemVersionString)
+    case "getMemoryInfo":
+      result("macOS memory")
     default:
       result(FlutterMethodNotImplemented)
     }

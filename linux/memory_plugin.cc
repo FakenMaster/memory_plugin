@@ -30,7 +30,11 @@ static void memory_plugin_handle_method_call(
     g_autofree gchar *version = g_strdup_printf("Linux %s", uname_data.version);
     g_autoptr(FlValue) result = fl_value_new_string(version);
     response = FL_METHOD_RESPONSE(fl_method_success_response_new(result));
-  } else {
+  } else if(strcmp(method, "getMemoryInfo") == 0) {
+    g_autofree gchar *memory = g_strdup_printf("Linux not implemented");
+    g_autoptr(FlValue) result = fl_value_new_string(memory);
+    response = FL_METHOD_RESPONSE(fl_method_success_response_new(result));
+  }else {
     response = FL_METHOD_RESPONSE(fl_method_not_implemented_response_new());
   }
 

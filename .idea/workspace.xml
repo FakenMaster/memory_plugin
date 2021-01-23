@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b0fa93f-aa5a-40f5-b19a-cb438558ca61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/faken/memory/memory_plugin/MemoryPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/faken/memory/memory_plugin/MemoryPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/memory_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/memory_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/memory_plugin_web.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/memory_plugin_web.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/memory_plugin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

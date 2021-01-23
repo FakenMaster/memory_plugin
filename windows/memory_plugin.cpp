@@ -67,7 +67,11 @@ void MemoryPlugin::HandleMethodCall(
       version_stream << "7";
     }
     result->Success(flutter::EncodableValue(version_stream.str()));
-  } else {
+  } else if(method_call.method_name().compare("getMemoryInfo") == 0) {
+    std::ostringstream memory_stream;
+    memory_stream << "Windows memory not implemented";
+    result->Success(flutter::EncodableValue(memory_stream.str())
+  }else {
     result->NotImplemented();
   }
 }

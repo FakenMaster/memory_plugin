@@ -6,6 +6,7 @@ import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
+import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import java.util.*
 
@@ -35,9 +36,9 @@ class MemoryPlugin : FlutterPlugin, MethodCallHandler {
                 val totalMemory = memoryInfo.totalMem
                 val availableMemory = memoryInfo.availMem
                 val usedMemory = totalMemory - availableMemory
-                val usedPercent = usedMemory/totalMemory
+                val usedPercent = usedMemory*100/totalMemory
                 result.success("TotalMemory: ${bytesToHuman(totalMemory)}, UsedMemory: ${bytesToHuman(usedMemory)}, " +
-                        "AvailableMemory: ${bytesToHuman(availableMemory)}, UsedPercentage: $usedPercent")
+                        "AvailableMemory: ${bytesToHuman(availableMemory)}, UsedPercentage: $usedPercent%")
             }
             else -> {
                 result.notImplemented()

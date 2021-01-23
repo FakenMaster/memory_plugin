@@ -7,8 +7,8 @@ class MemoryPlugin {
   static const MethodChannel _channel =
       const MethodChannel('memory_plugin');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+  static Future<String?> get platformVersion async {
+    final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
 }

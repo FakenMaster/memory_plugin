@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* memory plugin.
+
+## 0.0.2
+
+* migrate null-safety.

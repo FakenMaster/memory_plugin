@@ -12,3 +12,6 @@
 
 ## 0.0.4
 * add all platforms.(linux not tested)
+
+## 0.0.5
+* macos memory update.

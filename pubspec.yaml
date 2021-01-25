@@ -1,6 +1,6 @@
 name: memory_plugin
 description: memory plugin.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/FakenMaster/memory_plugin.git
 
 environment:
